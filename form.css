@@ -1,0 +1,42 @@
+#form {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-wrap: normal;
+}
+#form td, #form th {
+    border: 1px solid #ddd;
+
+}
+#form th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: right;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+ background-color: #2b2b2b;
+}
