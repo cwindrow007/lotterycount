@@ -6,110 +6,210 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="Christopher Windrow" content="Version: 0.0.1">
     <title>LotteryCountForm</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        #form {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            overflow-wrap: normal;
+        }
+        #form td, #form th {
+            border: 1px solid #ddd;
+
+        }
+        #form th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: rgb(68, 68, 68);
+            color: white;
+        }
+
+        input[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #757575;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #1f1f1f;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}
+
+        input[type=submit]:hover {
+         background-color: #2b2b2b;
+}
+
+    </style>
     </head>
 
     <body>
         <header>
             <div class="header">
-                <a class="logo">LotteryCountForm</a>
+                <a class="wrapper"></a>
+                <h1 class="logo">LotteryCountForm</h1>
                 <nav>
                     <ul>
-                        <li><a>Lottery Vending Form</a></li>
-                        <li><a>Developer: Christopher Windrow</a></li>
-                        <li><a>V0.0.1</a></li>
+                        <li><a><b>Lottery Count Form</b></a></li>
+                        <li><a><b>Developer: Christopher Windrow</b></a></li>
+                        <li><a><b>V0.0.1</b></a></li>
                     </ul>
                 </nav>
                 </div>
 
             </div>
         </header>
+        <form id ="lotteryForm">
 
-        <table>
-            <tr>$1 Tickets</tr>
+        <table id="form">
+            <th>$1 Dollar Tickets</th>
+            <th>$2 Dollar Tickets</th>
+            <th>$3 Dollar Tickets</th>
+            <th>$5 Dollar Tickets</th>
+
+
             <tr>
-                <td><input type="number" id="numTickets1"/></td>
-                <td><input type="number" id="numTickets2"/></td>
-                <td><input type="number" id="numTickets3"/></td>
-                <td><input type="number" id="numTickets4"/></td>
-                <td><input type="number" id="numTickets5"/></td>
-                <td><input type="number" id="numTickets6"/></td>
-                <td><input type="number" id="numTickets7"/></td>
-                <td><input type="number" id="numTickets8"/></td>
+                <td><input type="number" id="numTickets1"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets18" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets35" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets52" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="numTickets2"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets19" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets36" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets53" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" id="numTickets3"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets20" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets37" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets54" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" id="numTickets4"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets21" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets38" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets55" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" id="numTickets5"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets22" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets39" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets56" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="numTickets6"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets23" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets40" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets57" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" id="numTickets7"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets24" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets41" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets58" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+
+            <tr>
+                <td><input type="number" id="numTickets8"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets25" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets42" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets59" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="numTickets9"  placeholder="$1 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets26" placeholder="$2 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets43" placeholder="$3 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets60" placeholder="$5 Dollar Tickets"/></td>
+            </tr>
+
+
+
+        </table>
+        <table id="form">
+            <th>$10 Dollar Tickets</th>
+            <th>$20 Dollar Tickets</th>
+            <th>$30 Dollar Tickets</th>
+            <th>Sum of all Tickets:</th>
+
+
+            <tr>
+                <td><input type="number" id="numTickets10" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets27" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets44" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total1">$0</span></td>
             </tr>
-            <tr>$2 Tickets</tr>
             <tr>
-                <td><input type="number" id="numTickets9"/></td>
-                <td><input type="number" id="numTickets10"/></td>
-                <td><input type="number" id="numTickets11"/></td>
-                <td><input type="number" id="numTickets12"/></td>
-                <td><input type="number" id="numTickets13"/></td>
-                <td><input type="number" id="numTickets14"/></td>
-                <td><input type="number" id="numTickets15"/></td>
-                <td><input type="number" id="numTickets16"/></td>
+                <td><input type="number" id="numTickets11" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets28" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets45" placeholder="$30 Dollar Tickets"/></td>
+                <th>Totals by order: </th>
+            </tr>
+
+            <tr>
+                <td><input type="number" id="numTickets12" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets29" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets46" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total2">$0</span></td>
             </tr>
-            <tr>$3 Tickets</tr>
+
             <tr>
-                <td><input type="number" id="numTickets17"/></td>
-                <td><input type="number" id="numTickets18"/></td>
-                <td><input type="number" id="numTickets19"/></td>
-                <td><input type="number" id="numTickets20"/></td>
-                <td><input type="number" id="numTickets21"/></td>
-                <td><input type="number" id="numTickets22"/></td>
-                <td><input type="number" id="numTickets23"/></td>
-                <td><input type="number" id="numTickets24"/></td>
+                <td><input type="number" id="numTickets13" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets30" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets47" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total3">$0</span></td>
             </tr>
-            <tr>$5 Tickets</tr>
+
             <tr>
-                <td><input type="number" id="numTickets25"/></td>
-                <td><input type="number" id="numTickets26"/></td>
-                <td><input type="number" id="numTickets27"/></td>
-                <td><input type="number" id="numTickets28"/></td>
-                <td><input type="number" id="numTickets29"/></td>
-                <td><input type="number" id="numTickets30"/></td>
-                <td><input type="number" id="numTickets31"/></td>
-                <td><input type="number" id="numTickets32"/></td>
+                <td><input type="number" id="numTickets14" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets31" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets48" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total4">$0</span></td>
             </tr>
-            <tr>$10 Tickets</tr>
             <tr>
-                <td><input type="number" id="numTickets33"/></td>
-                <td><input type="number" id="numTickets34"/></td>
-                <td><input type="number" id="numTickets35"/></td>
-                <td><input type="number" id="numTickets36"/></td>
-                <td><input type="number" id="numTickets37"/></td>
-                <td><input type="number" id="numTickets38"/></td>
-                <td><input type="number" id="numTickets39"/></td>
-                <td><input type="number" id="numTickets40"/></td>
+                <td><input type="number" id="numTickets15" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets32" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets49" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total5">$0</span></td>
             </tr>
-            <tr>$20 Tickets</tr>
+
             <tr>
-                <td><input type="number" id="numTickets41"/></td>
-                <td><input type="number" id="numTickets42"/></td>
-                <td><input type="number" id="numTickets43"/></td>
-                <td><input type="number" id="numTickets44"/></td>
-                <td><input type="number" id="numTickets45"/></td>
-                <td><input type="number" id="numTickets46"/></td>
-                <td><input type="number" id="numTickets47"/></td>
-                <td><input type="number" id="numTickets48"/></td>
+                <td><input type="number" id="numTickets16" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets33" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets50" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total6">$0</span></td>
             </tr>
-            <tr>$30 Tickets</tr>
+
             <tr>
-                <td><input type="number" id="numTickets49"/></td>
-                <td><input type="number" id="numTickets50"/></td>
-                <td><input type="number" id="numTickets51"/></td>
-                <td><input type="number" id="numTickets52"/></td>
-                <td><input type="number" id="numTickets53"/></td>
-                <td><input type="number" id="numTickets54"/></td>
-                <td><input type="number" id="numTickets55"/></td>
-                <td><input type="number" id="numTickets56"/></td>
+                <td><input type="number" id="numTickets17" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets34" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets51" placeholder="$30 Dollar Tickets"/></td>
                 <td><span id="total7">$0</span></td>
             </tr>
-            
+            <tr>
+                <td><input type="number" id="numTickets1" placeholder="$10 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets2" placeholder="$20 Dollar Tickets"/></td>
+                <td><input type="number" id="numTickets3" placeholder="$30 Dollar Tickets"/></td>
+                <td><span id="total8">$0</span></td>
+            </tr>
         </table>
+        <input type="submit" value="Calculate Total" />
+        </form>
     </body>
 </html>
